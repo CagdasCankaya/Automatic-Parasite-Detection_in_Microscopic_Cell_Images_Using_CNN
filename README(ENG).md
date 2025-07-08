@@ -1,3 +1,5 @@
+# Automatic Parasite Detection in Microscopic Cell Images Using CNN
+
 This project aims to automatically detect whether microscope cell images contain parasites using a CNN (Convolutional Neural Network) model. Each colored image has dimensions of 103x103 pixels with 3 channels (RGB). Labels are binary: 0 for clean cells and 1 for parasite-infected cells. Due to fixed input size requirements for CNN, all images were resized to 224x224.
 
 The model architecture is inspired by LeNet: two Conv2D layers extract features such as edges, colors, and textures, followed by Batch Normalization to stabilize training and MaxPooling for dimensionality reduction. The data is then flattened and passed through two Dense layers, with a single sigmoid neuron for binary classification at the output.
